@@ -1,0 +1,18 @@
+{
+  "categories": [
+    {
+      "id": 2,
+      "name": "electronics",
+      "display_name": "dispalyelectronics",
+      "description": "electronics category"
+    }
+  ],
+  "products": [
+    {
+      "category": "electronics",
+      "display_name": "electronics",
+      "description": "text electronics",
+      "id": 2
+    }
+  ]
+}

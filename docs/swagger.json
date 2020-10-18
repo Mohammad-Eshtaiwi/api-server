@@ -1,0 +1,164 @@
+{
+    "swagger" : "2.0",
+    "info" : {
+      "description" : "defaultDescription",
+      "version" : "0.1",
+      "title" : "defaultTitle"
+    },
+    "paths" : {
+      "/products/1" : {
+        "get" : {
+          "produces" : [ "application/json" ],
+          "parameters" : [ ],
+          "responses" : {
+            "200" : {
+              "description" : "Definition generated from Swagger Inspector",
+              "schema" : {
+                "$ref" : "#/definitions/Model9"
+              }
+            }
+          }
+        }
+      },
+      "/products" : {
+        "post" : {
+          "consumes" : [ "application/json" ],
+          "produces" : [ "application/json" ],
+          "parameters" : [ {
+            "in" : "body",
+            "name" : "body",
+            "required" : false,
+            "schema" : {
+              "$ref" : "#/definitions/Model4"
+            },
+            "x-examples" : {
+              "application/json" : "{\n      \"_id\": 4,\n      \"category\": \"electronics\",\n      \"display_name\": \"electronics\",\n      \"description\": \"text electronics\"\n    }"
+            }
+          } ],
+          "responses" : {
+            "201" : {
+              "description" : "Definition generated from Swagger Inspector",
+              "schema" : {
+                "$ref" : "#/definitions/Model7"
+              }
+            }
+          }
+        }
+      },
+      "/categories/2" : {
+        "get" : {
+          "produces" : [ "application/json" ],
+          "parameters" : [ ],
+          "responses" : {
+            "200" : {
+              "description" : "Definition generated from Swagger Inspector",
+              "schema" : {
+                "$ref" : "#/definitions/Model14"
+              }
+            }
+          }
+        }
+      },
+      "/{param0}" : {
+        "get" : {
+          "produces" : [ "application/json" ],
+          "parameters" : [ {
+            "name" : "category",
+            "in" : "query",
+            "required" : false,
+            "type" : "string",
+            "x-example" : "electronics"
+          }, {
+            "name" : "param0",
+            "in" : "path",
+            "description" : "Example values form path are: 'categories' and 'products'",
+            "required" : true,
+            "type" : "string"
+          } ],
+          "responses" : {
+            "200" : {
+              "description" : "Definition generated from Swagger Inspector",
+              "schema" : {
+                "$ref" : "#/definitions/Model15"
+              }
+            }
+          }
+        }
+      },
+      "/{param1}/{param2}" : {
+        "put" : {
+          "consumes" : [ "application/json" ],
+          "produces" : [ "application/json" ],
+          "parameters" : [ {
+            "in" : "body",
+            "name" : "body",
+            "required" : false,
+            "schema" : {
+              "$ref" : "#/definitions/Model0"
+            },
+            "x-examples" : {
+              "application/json" : "{\n      \"_id\": 3,\n      \"category\": \"updated\",\n      \"display_name\": \"dispalytest\",\n      \"description\": \"text update\"\n    }"
+            }
+          }, {
+            "name" : "param1",
+            "in" : "path",
+            "description" : "Example values form path are: 'products' and 'categories'",
+            "required" : true,
+            "type" : "string"
+          }, {
+            "name" : "param2",
+            "in" : "path",
+            "description" : "Example values form path are: '1' and '3'",
+            "required" : true,
+            "type" : "string"
+          } ],
+          "responses" : {
+            "200" : {
+              "description" : "Definition generated from Swagger Inspector",
+              "schema" : {
+                "$ref" : "#/definitions/Model8"
+              }
+            }
+          }
+        }
+      },
+      "/{param3}/{param4}" : {
+        "delete" : {
+          "consumes" : [ "application/json" ],
+          "produces" : [ "application/json" ],
+          "parameters" : [ {
+            "in" : "body",
+            "name" : "body",
+            "required" : false,
+            "schema" : {
+              "$ref" : "#/definitions/Model3"
+            },
+            "x-examples" : {
+              "application/json" : "{\n      \"_id\": 4,\n      \"category\": \"electronics\",\n      \"display_name\": \"electronics\",\n      \"description\": \"text electronics\"\n    }"
+            }
+          }, {
+            "name" : "param3",
+            "in" : "path",
+            "description" : "Example values form path are: 'products' and 'categories'",
+            "required" : true,
+            "type" : "string"
+          }, {
+            "name" : "param4",
+            "in" : "path",
+            "description" : "Example values form path are: '1' and '3'",
+            "required" : true,
+            "type" : "string"
+          } ],
+          "responses" : {
+            "200" : {
+              "description" : "Definition generated from Swagger Inspector",
+              "schema" : {
+                "$ref" : "#/definitions/Model6"
+              }
+            }
+          }
+        }
+      }
+    },
+    "definitions" : { }
+  }
